@@ -176,9 +176,8 @@ div .dot{
 }
 #crab
 {
-	left:30px; top:600px;
-	width: 200px; height: 147px;
-	position: absolute;
+	left:30px;
+    position: absolute;
 	-webkit-animation-name: crab;
 	-webkit-animation-duration: 10s;
 	-webkit-animation-timing-function: linear;
@@ -188,10 +187,10 @@ div .dot{
 }
 @-webkit-keyframes crab
 {
-	0%   {left:30px; top:600px;}
-	1%   {left:30px; top:600px;}
-	50%  {left: 400px; top: 600px;}
-	100% {left: 30px; top: 600px;}
+	0%   {left:30px; top:500px;}
+	1%   {left:30px; top:500px;}
+	50%  {left: 400px; top: 500px;}
+	100% {left: 30px; top: 500px;}
 }
 #dolphin
 {
@@ -228,11 +227,11 @@ div .dot{
 }
 @-webkit-keyframes fish1
 {
-	0%   {right:20px; top:600px;}
-	1%   {right:20px; top:600px;}
-	50%  {right:600px; top: 600px;}
-	90%  {right:50px; top: 600px; -webkit-transform:scaleX(-1);}
-	100% {right:20px; top: 600px; -webkit-transform:scaleX(1);}
+	0%   {right:20px; top:100px;}
+	1%   {right:20px; top:100px;}
+	50%  {right:600px; top: 100px;}
+	90%  {right:50px; top: 100px; -webkit-transform:scaleX(-1);}
+	100% {right:20px; top: 100px; -webkit-transform:scaleX(1);}
 }
 #fish3
 {
