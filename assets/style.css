@@ -207,7 +207,51 @@ div .dot{
 @-webkit-keyframes dolphin
 {
 	0%   {right:50px; top:200px;}
-	1%   {right:10490; -webkit-transform:scaleX(-1);}
+	1%   {right:100px; top:200px;}
+	50%  {right:800px; top:200px;}
+	60%  {right:500px; top:500px; -webkit-transform:scaleX(1);}
+	90%  {right:100px; top:200px; -webkit-transform:scaleX(1);}
+	100% {right:50px; top:200px; -webkit-transform:scaleX(-1);}
+}
+#fish1
+{ 
+	right:20px; top:600px;
+	width: 200px; height: 147px;
+	position: absolute;
+	-webkit-animation-name: fish1;
+	-webkit-animation-duration: 10s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-play-state: running;	
+	-webkit-transform:scaleX(1)
+}
+@-webkit-keyframes fish1
+{
+	0%   {right:20px; top:100px;}
+	1%   {right:20px; top:100px;}
+	50%  {right:600px; top: 100px;}
+	90%  {right:50px; top: 100px; -webkit-transform:scaleX(-1);}
+	100% {right:20px; top: 100px; -webkit-transform:scaleX(1);}
+}
+#fish3
+{
+	right: 10px; 
+	position: absolute;
+	-webkit-animation-name: fish3;
+	-webkit-animation-duration: 10s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-play-state: running;	
+	-webkit-transform:scaleX(-1)
+}
+@-webkit-keyframes fish3
+{
+	0%   {right:10px; top:490px;}
+	1%   {right:10px; top:490px;}
+	50%  {right: 400px; top: 490;}
+	60%  {right: 350px; top: 490px;}
+	90%  {right: 50px; top: 490; -webkit-transform:scaleX(1);}
+	100% {right: 10px; top: 490; -webkit-transform:scaleX(-1);}
 }
 #shark
 {
