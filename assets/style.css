@@ -240,7 +240,7 @@ div .dot{
 	20%  {left:700px; top:400px;}
 	40%  {left:700px; -webkit-transform:scaleX(-1);}
 	90%  {left:500px; top:100px; -webkit-transform:scaleX(-1);}
-	100% {left:60px; top:400px; -webkit-transform:scaleX(-1);}
+	100% {left:60px; top:400px; -webkit-transform:scaleX(1);}
 }
 #crab
 {
@@ -279,7 +279,8 @@ div .dot{
 	1%   {right:100px; top:200px;}
 	50%  {right:800px; top:200px;}
 	60%  {right:500px; top:500px; -webkit-transform:scaleX(1);}
-	100% {right:50px; top:200px; -webkit-transform:scaleX(1);}
+	90%  {right:100px; top:200px; -webkit-transform:scaleX(1);}
+	100% {right:50px; top:200px; -webkit-transform:scaleX(-1);}
 }
 #fish1
 { 
@@ -298,7 +299,8 @@ div .dot{
 	0%   {right:20px; top:600px;}
 	1%   {right:20px; top:600px;}
 	50%  {right:600px; top: 600px;}
-	100% {right:20px; top: 600px; -webkit-transform:scaleX(-1);}
+	90%  {right:50px; top: 600px; -webkit-transform:scaleX(-1);}
+	100% {right:20px; top: 600px; -webkit-transform:scaleX(1);}
 }
 #fish3
 {
@@ -318,7 +320,8 @@ div .dot{
 	1%   {right:10px; top:550px;}
 	50%  {right: 400px; top: 550;}
 	60%  {right: 350px; top: 550px;}
-	100% {right: 10px; top: 550; -webkit-transform:scaleX(1);}
+	90%  {right: 50px; top: 550; -webkit-transform:scaleX(1);}
+	100% {right: 10px; top: 550; -webkit-transform:scaleX(-1);}
 }
 #shark
 {
