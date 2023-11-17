@@ -33,14 +33,6 @@
 	transform: scale(1.2);
 	transition: 1.5s;
 }
-.wrapper{
-    height: 100%;
-    width: 100%;
-    background-image: url('/img/iloveimg-resized/background-remover/background.png');
-    background-size: cover;
-    position: fixed;
-    position: absolute;
-}
 .wrapper div{
     height: 60px;
     width: 60px;
@@ -118,66 +110,6 @@ div .dot{
     100%{
         transform: scale(0) translateY(-100) rotate(360deg);
     }
-}
-.container div{
-    position: absolute;
-    animation: fished 20s linear infinite;
-}
-.container div:nth-child(1){
-    top:20%;
-    right: 0;
-    animation: fished2 15s linear infinite;
-    animation-delay: 1s;
-}
-.container div:nth-child(2){
-    top:30%;
-    right:0;
-    animation: fished2 20s linear infinite;
-    animation-delay: 0.5s;
-}
-.container div:nth-child(3){
-    top:40%;
-    right: 0;
-    animation: fished2 14s linear infinite;
-}
-.container div:nth-child(4){
-    top:50%;
-    right:0;
-    animation: fished2 15s linear infinite;
-    animation-delay: 1s;
-}
-.container div:nth-child(5){
-    top:60%;
-    right: 0;
-    animation: fished2 17s linear infinite;
-    animation-delay: 0.5s;
-}
-.container div:nth-child(6){
-    top:70%;
-    right:0;
-    animation: fished2 30s linear infinite;
-}
-.container div:nth-child(7){
-    top:80%;
-    right:0;
-    animation: fished2 35s linear infinite;
-    animation-delay: 1s;
-}
-.container div:nth-child(8){
-    top:90%;
-    right: 0;
-    animation: fished2 22s linear infinite;
-}
-.container div:nth-child(9){
-    top:10%;
-    right: 0;
-    animation: fished2 34s linear infinite;
-    animation-delay: 0.3s;
-}
-.container div:nth-child(10){
-    top:0%;
-    left:0;
-    animation: fished1 15s linear infinite;
 }
 .bubble div{
     height: 10px;
