@@ -18,15 +18,18 @@ let changesound=document.querySelector("#bg2")
 let j=0;
 changesound.addEventListener("click",function(){
     if(j==0){
-        document.querySelector(".audios audio").src="./assets/audio/whale1.mp3"
+        document.querySelector(".audios audio").src="./assets/audio/1.mp3"
         j++
     }
     else if(j==1){
-        document.querySelector(".audios audio").src="./assets/audio/whale2.mp3"
+        document.querySelector(".audios audio").src="./assets/audio/2.mp3"
+        j++
+    }
+    else if(j==2){
+        document.querySelector(".audios audio").src="./assets/audio/3.mp3"
         j++
     }
     else{
-        document.querySelector(".audios audio").src="./assets/audio/audio1.mp3"
-        j=0
+        j=0;
     }
 })

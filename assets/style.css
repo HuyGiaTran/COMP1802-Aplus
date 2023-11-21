@@ -1,13 +1,15 @@
 *{
     margin: 0;
     padding: 0;
+	overflow: hidden;
 }
 .background{
-	position: relative;
+	position: fixed;
     width: 100%;
     height: 100vh;
 }
 .background_image img{
+	position: relative;
 	width: 100%;
 	height: 100vh;
 }
@@ -27,6 +29,7 @@
 	margin: 10px;
 	border-radius: 10%;
 	font-weight: 600;
+	z-index: 1000;
 }
 .block .change:hover{
 	background: aquamarine;
@@ -274,8 +277,7 @@ div .dot{
 
 #orca
 {
-	left:10%; top:60%;
-	width: 300px; height: 140px;
+
 	position: absolute;
 	animation-name: orca;
 	animation-duration: 10s;
@@ -310,55 +312,55 @@ div .dot{
 }
 @keyframes orca
 {
-	0%   {left:10%; top:60%;}
-	1%   {left:10%; top:60%;}
-	20%  {left:30%; top:30%;}
-	50%  {left:50%; top: 25%; transform:scaleX(-1);}
-	90%  {left:40%; top:25%; transform:scaleX(-1);}
-	100% {left:10%; top:60%; transform:scaleX(1);}
+	0%   {left:100%; top:60%;transform:scaleX(-1);}
+	1%   {left:100%; top:60%;transform:scaleX(-1);}
+	20%  {left:90%; top:50;transform:scaleX(-1);}
+	50%  {left:80%; top: 20%; transform:scaleX(-1);}
+	90%  {left:70%; top:-10%; transform:scaleX(-1);}
+	100% {left:70%; top:-30%; transform:scaleX(1);}
 }
 @-webkit-keyframes orca
 {
-	0%   {left:10%; top:60%;}
-	1%   {left:10%; top:60%;}
-	20%  {left:30%; top:30%;}
-	50%  {left:50%; top: 25%; -webkit-transform:scaleX(-1);}
-	90%  {left:40%; top:25%; -webkit-transform:scaleX(-1);}
-	100% {left:10%; top:60%; -webkit-transform:scaleX(1);}
+	0%   {left:100%; top:60%; -webkit-transform:scaleX(-1);}
+	1%   {left:100%; top:60%; -webkit-transform:scaleX(-1);}
+	20%  {left:90%; top:50; -webkit-transform:scaleX(-1);}
+	50%  {left:80%; top: 20%; -webkit-transform:scaleX(-1);}
+	90%  {left:70%; top:-10%; -webkit-transform:scaleX(-1);}
+	100% {left:70%; top:-30%; -webkit-transform:scaleX(1);}
 }
 @-moz-keyframes orca
 {
-	0%   {left:10%; top:60%;}
-	1%   {left:10%; top:60%;}
-	20%  {left:30%; top:30%;}
-	50%  {left:50%; top: 25%; -moz-transform:scaleX(-1);}
-	90%  {left:40%; top:25%; -moz-transform:scaleX(-1);}
-	100% {left:10%; top:60%; -moz-transform:scaleX(1);}
+	0%   {left:100%; top:60%; -moz-transform:scaleX(-1);}
+	1%   {left:100%; top:60%; -moz-transform:scaleX(-1);}
+	20%  {left:90%; top:50; -moz-transform:scaleX(-1);}
+	50%  {left:80%; top: 20%; -moz-transform:scaleX(-1);}
+	90%  {left:70%; top:-10%; -moz-transform:scaleX(-1);}
+	100% {left:70%; top:-30%; -moz-transform:scaleX(1);}
 }
 @-o-keyframes orca
 {
-	0%   {left:10%; top:60%;}
-	1%   {left:10%; top:60%;}
-	20%  {left:30%; top:30%;}
-	50%  {left:50%; top: 25%; -o-transform:scaleX(-1);}
-	90%  {left:40%; top:25%; -o-transform:scaleX(-1);}
-	100% {left:10%; top:60%; -o-transform:scaleX(1);}
+	0%   {left:100%; top:60%;-o-transform:scaleX(-1);}
+	1%   {left:100%; top:60%;-o-transform:scaleX(-1);}
+	20%  {left:90%; top:50;-o-transform:scaleX(-1);}
+	50%  {left:80%; top: 20%; -o-transform:scaleX(-1);}
+	90%  {left:70%; top:-10%; -o-transform:scaleX(-1);}
+	100% {left:70%; top:-30%; -o-transform:scaleX(1);}
 }
 @-ms-keyframes orca
 {
-	0%   {left:10%; top:60%;}
-	1%   {left:10%; top:60%;}
-	20%  {left:30%; top:30%;}
-	50%  {left:50%; top: 25%; -ms-transform:scaleX(-1);}
-	90%  {left:40%; top:25%; -ms-transform:scaleX(-1);}
-	100% {left:10%; top:60%; -ms-transform:scaleX(1);}
+	0%   {left:100%; top:60%; -ms-transform:scaleX(-1);}
+	1%   {left:100%; top:60%; -ms-transform:scaleX(-1);}
+	20%  {left:90%; top:50; -ms-transform:scaleX(-1);}
+	50%  {left:80%; top: 20%; -ms-transform:scaleX(-1);}
+	90%  {left:70%; top:-10%; -ms-transform:scaleX(-1);}
+	100% {left:70%; top:-30%; -ms-transform:scaleX(1);}
 }
 
 
 
 #crab
 {
-	left:5%; top:80%;
+	left:5%; bottom: 0;
 	width: 100px; height:50px;
     position: absolute;
 	animation-name: crab;
@@ -394,125 +396,39 @@ div .dot{
 }
 @keyframes crab
 {
-	0%   {left:5%; top:80%;}
-	1%   {left:5%; top:80%;}
-	50%  {left:25%; top:80%;}
-	100% {left:5%; top:80%;}
+	0%   {left:5%; top:90%;}
+	1%   {left:5%; top:90%;}
+	50%  {left:50%; top:90%;}
+	100% {left:5%; top:90%;}
 }
 @-webkit-keyframes crab
 {
-	0%   {left:5%; top:80%;}
-	1%   {left:5%; top:80%;}
-	50%  {left:25%; top:80%;}
-	100% {left:5%; top:80%;}
+	0%   {left:5%; top:90%;}
+	1%   {left:5%; top:90%;}
+	50%  {left:50%; top:90%;}
+	100% {left:5%; top:90%;}
 }
 @-moz-keyframes crab
 {
-	0%   {left:5%; top:80%;}
-	1%   {left:5%; top:80%;}
-	50%  {left:25%; top:80%;}
-	100% {left:5%; top:80%;}
+	0%   {left:5%; top:90%;}
+	1%   {left:5%; top:90%;}
+	50%  {left:50%; top:90%;}
+	100% {left:5%; top:90%;}
 }
 @-o-keyframes crab
 {
-	0%   {left:5%; top:80%;}
-	1%   {left:5%; top:80%;}
-	50%  {left:25%; top:80%;}
-	100% {left:5%; top:80%;}
+	0%   {left:5%; top:90%;}
+	1%   {left:5%; top:90%;}
+	50%  {left:50%; top:90%;}
+	100% {left:5%; top:90%;}
 }
 @-ms-keyframes crab
 {
-	0%   {left:5%; top:80%;}
-	1%   {left:5%; top:80%;}
-	50%  {left:25%; top:80%;}
-	100% {left:5%; top:80%;}
+	0%   {left:5%; top:90%;}
+	1%   {left:5%; top:90%;}
+	50%  {left:50%; top:90%;}
+	100% {left:5%; top:90%;}
 }
-
-
-
-#dolphin
-{
-	right:5%; top: 30%;
-	width: 200px; height: 100px;
-	position: absolute;
-	animation-name: dolphin;
-	animation-duration: 6s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
-	animation-play-state: running;	
-	transform:scaleX(-1);
-	-webkit-animation-name: dolphin;
-	-webkit-animation-duration: 6s;
-	-webkit-animation-timing-function: linear;
-	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-play-state: running;	
-	-webkit-transform:scaleX(-1);
-	-moz-animation-name: dolphin;
-	-moz-animation-duration: 6s;
-	-moz-animation-timing-function: linear;
-	-moz-animation-iteration-count: infinite;
-	-moz-animation-play-state: running;	
-	-moz-transform:scaleX(-1);
-	-o-animation-name: dolphin;
-	-o-animation-duration: 6s;
-	-o-animation-timing-function: linear;
-	-o-animation-iteration-count: infinite;
-	-o-animation-play-state: running;	
-	-o-transform:scaleX(-1);
-	-ms-animation-name: dolphin;
-	-ms-animation-duration: 6s;
-	-ms-animation-timing-function: linear;
-	-ms-animation-iteration-count: infinite;
-	-ms-animation-play-state: running;	
-	-ms-transform:scaleX(-1)
-}
-@keyframes dolphin
-{
-	0%   {right:5%; top:30%;}
-	1%   {right:5%; top:30%;}
-	50%  {right:40%; top:40%;}
-	60%  {right:45%; top:50%; transform:scaleX(1);}
-	80%  {right:20%; top:50%; transform:scaleX(1);}
-	100% {right:5%; top:30%; transform:scaleX(-1);}
-}
-@-webkit-keyframes dolphin
-{
-	0%   {right:5%; top:30%;}
-	1%   {right:5%; top:30%;}
-	50%  {right:40%; top:40%;}
-	60%  {right:45%; top:50%; -webkit-transform:scaleX(1);}
-	80%  {right:20%; top:50%; -webkit-transform:scaleX(1);}
-	100% {right:5%; top:30%; -webkit-transform:scaleX(-1);}
-}
-@-moz-keyframes dolphin
-{
-	0%   {right:5%; top:30%;}
-	1%   {right:5%; top:30%;}
-	50%  {right:40%; top:40%;}
-	60%  {right:45%; top:50%; -moz-transform:scaleX(1);}
-	80%  {right:20%; top:50%; -moz-transform:scaleX(1);}
-	100% {right:5%; top:30%; -moz-transform:scaleX(-1);}
-}
-@-o-keyframes dolphin
-{
-	0%   {right:5%; top:30%;}
-	1%   {right:5%; top:30%;}
-	50%  {right:40%; top:40%;}
-	60%  {right:45%; top:50%; -o-transform:scaleX(1);}
-	80%  {right:20%; top:50%; -o-transform:scaleX(1);}
-	100% {right:5%; top:30%; -o-transform:scaleX(-1);}
-}
-@-ms-keyframes dolphin
-{
-	0%   {right:5%; top:30%;}
-	1%   {right:5%; top:30%;}
-	50%  {right:40%; top:40%;}
-	60%  {right:45%; top:50%; -ms-transform:scaleX(1);}
-	80%  {right:20%; top:50%; -ms-transform:scaleX(1);}
-	100% {right:5%; top:30%; -ms-transform:scaleX(-1);}
-}
-
-
 
 #fish1
 { 
@@ -553,11 +469,14 @@ div .dot{
 }
 @keyframes fish1
 {
-	0%   {right:3%; top:75%;}
-	1%   {right:3%; top:75%;}
-	50%  {right:50%; top:75%;}
-	80%  {right:20%; top:75%; transform:scaleX(-1);}
-	100% {right:5%; top:75%;  transform:scaleX(1);}
+	0%   {right:0; top:75%;}
+	49%{
+		right:99%;-webkit-transform:scaleX(1)
+	}
+	50%{right: 100%;-webkit-transform:scaleX(-1);
+
+	}
+	100% {right:0; top:75%;  -webkit-transform:scaleX(-1);}
 }
 @-webkit-keyframes fish1
 {
@@ -600,31 +519,31 @@ div .dot{
 	width: 100px; height: 50px;
 	position: absolute;
 	animation-name: fish3;
-	animation-duration: 7s;
+	animation-duration: 15s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
 	animation-play-state: running;	
 	transform:scaleX(-1);
 	-webkit-animation-name: fish3;
-	-webkit-animation-duration: 7s;
+	-webkit-animation-duration: 15s;
 	-webkit-animation-timing-function: linear;
 	-webkit-animation-iteration-count: infinite;
 	-webkit-animation-play-state: running;	
 	-webkit-transform:scaleX(-1);
 	-moz-animation-name: fish3;
-	-moz-animation-duration: 7s;
+	-moz-animation-duration: 15s;
 	-moz-animation-timing-function: linear;
 	-moz-animation-iteration-count: infinite;
 	-moz-animation-play-state: running;	
 	-moz-transform:scaleX(-1);
 	-o-animation-name: fish3;
-	-o-animation-duration: 7s;
+	-o-animation-duration: 15s;
 	-o-animation-timing-function: linear;
 	-o-animation-iteration-count: infinite;
 	-o-animation-play-state: running;	
 	-o-transform:scaleX(-1);
 	-ms-animation-name: fish3;
-	-ms-animation-duration: 7s;
+	-ms-animation-duration: 15s;
 	-ms-animation-timing-function: linear;
 	-ms-animation-iteration-count: infinite;
 	-ms-animation-play-state: running;	
@@ -632,83 +551,77 @@ div .dot{
 }
 @keyframes fish3
 {
-	0%   {right:5%; top:85%;}
-	1%   {right:5%; top:85%;}
-	50%  {right:50%; top:85%;}
-	60%  {right:55%; top:85%;}
-	90%  {right:15%; top:85%; transform:scaleX(1);}
-	100% {right:5%; top:85%;  transform:scaleX(-1);}
+	0%   {left:0 ;top:20%;-webkit-transform:scaleX(1);}
+	49%   {left:99%; top:20%;-webkit-transform:scaleX(1);}
+	50%  {left:100%; top:20%;transform:scaleX(-1)}
+	51%  {left:99%; top:20%;}
+	100% {left:0; top:20%;  transform:scaleX(-1);}
 }
 @-webkit-keyframes fish3
 {
-	0%   {right:5%; top:85%;}
-	1%   {right:5%; top:85%;}
-	50%  {right:50%; top:85%;}
-	60%  {right:55%; top:85%;}
-	90%  {right:15%; top:85%; -webkit-transform:scaleX(1);}
-	100% {right:5%; top:85%; -webkit-transform:scaleX(-1);}
+	0%   {left:0 ;top:20%;-webkit-transform:scaleX(1);}
+	49%   {left:99%; top:20%;-webkit-transform:scaleX(1);}
+	50%  {left:100%; top:20%;transform:scaleX(-1)}
+	51%  {left:99%; top:20%;}
+	100% {left:0; top:20%; -webkit-transform:scaleX(-1);}
 }
 @-moz-keyframes fish3
 {
-	0%   {right:5%; top:85%;}
-	1%   {right:5%; top:85%;}
-	50%  {right:50%; top:85%;}
-	60%  {right:55%; top:85%;}
-	90%  {right:15%; top:85%; -moz-transform:scaleX(1);}
-	100% {right:5%; top:85%; -moz-transform:scaleX(-1);}
+	0%   {left:0 ;top:20%;-webkit-transform:scaleX(1);}
+	49%   {left:99%; top:20%;-webkit-transform:scaleX(1);}
+	50%  {left:100%; top:20%;transform:scaleX(-1)}
+	51%  {left:99%; top:20%;}
+	100% {left:0; top:20%; -moz-transform:scaleX(-1);}
 }
 @-o-keyframes fish3
 {
-	0%   {right:5%; top:85%;}
-	1%   {right:5%; top:85%;}
-	50%  {right:50%; top:85%;}
-	60%  {right:55%; top:85%;}
-	90%  {right:15%; top:85%; -o-transform:scaleX(1);}
-	100% {right:5%; top:85%; -o-transform:scaleX(-1);}
+	0%   {left:0 ;top:20%;-webkit-transform:scaleX(1);}
+	49%   {left:99%; top:20%;-webkit-transform:scaleX(1);}
+	50%  {left:100%; top:20%;transform:scaleX(-1)}
+	51%  {left:99%; top:20%;}
+	100% {left:0; top:20%; -o-transform:scaleX(-1);}
 }
 @-ms-keyframes fish3
 {
-	0%   {right:5%; top:85%;}
-	1%   {right:5%; top:85%;}
-	50%  {right:50%; top:85%;}
-	60%  {right:55%; top:85%;}
-	90%  {right:15%; top:85%; -ms-transform:scaleX(1);}
-	100% {right:5%; top:85%; -ms-transform:scaleX(-1);}
+	0%   {left:0 ;top:20%;-webkit-transform:scaleX(1);}
+	49%   {left:99%; top:20%;-webkit-transform:scaleX(1);}
+	50%  {left:100%; top:20%;transform:scaleX(-1)}
+	51%  {left:99%; top:20%;}
+	100% {left:0; top:85%; -ms-transform:scaleX(-1);}
 }
 
 
 
 #shark
 {
-	left:5%; top:20%;
-	width: 240px; height: 100px;
+	left:0; top:20%;
 	position: absolute;
 	animation-name: shark;
-	animation-duration: 10s;
+	animation-duration: 20s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
 	animation-play-state: running;	
 	transform:scaleX(-1);
 	-webkit-animation-name: shark;
-	-webkit-animation-duration: 10s;
+	-webkit-animation-duration: 20s;
 	-webkit-animation-timing-function: linear;
 	-webkit-animation-iteration-count: infinite;
 	-webkit-animation-play-state: running;	
 	-webkit-transform:scaleX(-1);
 	-moz-animation-name: shark;
-	-moz-animation-duration: 10s;
+	-moz-animation-duration: 20s;
 	-moz-animation-timing-function: linear;
 	-moz-animation-iteration-count: infinite;
 	-moz-animation-play-state: running;	
 	-moz-transform:scaleX(-1);
 	-o-animation-name: shark;
-	-o-animation-duration: 10s;
+	-o-animation-duration: 20s;
 	-o-animation-timing-function: linear;
 	-o-animation-iteration-count: infinite;
 	-o-animation-play-state: running;	
 	-o-transform:scaleX(-1);
 	-ms-animation-name: shark;
-	-ms-animation-duration: 10s;
+	-ms-animation-duration: 20s;
 	-ms-animation-timing-function: linear;
 	-ms-animation-iteration-count: infinite;
 	-ms-animation-play-state: running;	
@@ -716,41 +629,104 @@ div .dot{
 }
 @keyframes shark
 {
-	0%   {left:5%; top:20%;}
-	1%   {left:5%; top:20%;}
-	20%  {left:25%; top:25%;}
-	50%  {left:50%; top:20%;}
-	100%  {left:5%; top:20%; transform:scaleX(1);}
+	0%   {left:0; top:50%;}
+	8%   {left:5%; top:30%;}
+	20%  {left:25%; top:35%;}
+	50%  {left:50%; top:40%;}
+	100%  {left:100%; top:20%;}
 }
 @-webkit-keyframes shark
 {
-	0%   {left:5%; top:20%;}
-	1%   {left:5%; top:20%;}
-	20%  {left:25%; top:25%;}
-	50%  {left:50%; top:20%;}
-	100%  {left:5%; top:20%; -webkit-transform:scaleX(1);}
+	0%   {left:0; top:50%;}
+	8%   {left:5%; top:30%;}
+	20%  {left:25%; top:35%;}
+	50%  {left:50%; top:40%;}
+	100%  {left:100%; top:20%;}
 }
 @-moz-keyframes shark
 {
-	0%   {left:5%; top:20%;}
-	1%   {left:5%; top:20%;}
-	20%  {left:25%; top:25%;}
-	50%  {left:50%; top:20%;}
-	100%  {left:5%; top:20%; -moz-transform:scaleX(1);}
+	0%   {left:0; top:50%;}
+	8%   {left:5%; top:30%;}
+	20%  {left:25%; top:35%;}
+	50%  {left:50%; top:40%;}
+	100%  {left:100%; top:20%;}
 }
 @-o-keyframes shark
 {
-	0%   {left:5%; top:20%;}
-	1%   {left:5%; top:20%;}
-	20%  {left:25%; top:25%;}
-	50%  {left:50%; top:20%;}
-	100%  {left:5%; top:20%; -o-transform:scaleX(1);}
+	0%   {left:0; top:50%;}
+	8%   {left:5%; top:30%;}
+	20%  {left:25%; top:35%;}
+	50%  {left:50%; top:40%;}
+	100%  {left:100%; top:20%;}
 }
 @-ms-keyframes shark
 {
-	0%   {left:5%; top:20%;}
-	1%   {left:5%; top:20%;}
-	20%  {left:25%; top:25%;}
-	50%  {left:50%; top:20%;}
-	100%  {left:5%; top:20%; -ms-transform:scaleX(1);}
+	0%   {left:0; top:50%;}
+	8%   {left:5%; top:30%;}
+	20%  {left:25%; top:35%;}
+	50%  {left:50%; top:40%;}
+	100%  {left:100%; top:20%;}
+}
+#seaweed1{
+	bottom: 0;left: 10%;
+	position: absolute;
+}
+#seaweed2{
+	bottom: 0;left: -5%;
+	position: absolute;
+}
+#seaweed3{
+	bottom: 0;left: 80%;
+	position: absolute;
+}
+#pearl{
+	bottom: 0;left: 1000px;
+	width: 240px; height: 100px;
+	position: absolute;
+}
+#sua1{
+	left: 600px;
+	position: absolute;
+	animation-name: sua;
+	animation-duration: 10s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-play-state: running;	
+	transform:scaleX(-1);
+}
+#sua2{
+	left: 800px;
+	position: absolute;
+	animation-name: sua;
+	animation-duration: 14s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-play-state: running;	
+	transform:scaleX(-1);
+}
+@keyframes sua
+{
+	0%{
+		top:100%;
+	}
+	100%{
+		top:-20%;
+	}
+}
+#ray{
+	position: absolute;
+	animation-name: ray;
+	animation-duration: 14s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-play-state: running;	
+}
+@keyframes ray
+{
+	0%{
+		left:0; top:50%;
+	}
+	100%{
+		left: 20%; top:-20%;
+	}
 }
