@@ -29,5 +29,4 @@ changesound.addEventListener("click",function(){
         document.querySelector(".audios audio").src="./assets/audio/audio1.mp3"
         j=0
     }
-    
 })
